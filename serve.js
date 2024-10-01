@@ -14,7 +14,7 @@ const render = (filename, contents) => {
         </head>
           <main>
           <hr>
-          <p><a href='/'>Home</a> | <a href='/about'>About</a> | <a href='/blogs'>Blogs</a> | <a href='/podcasts'>Podcasts</a> | <a href='/contact'>Contact</a></p><hr>
+          <p><a href='/'>Home</a> | <a href='/about'>About</a> | <a href='/blogs'>Blogs</a> | <a href='/podcasts'>Podcasts</a> | <a href='/contact'>Contact</a> | <a href='https://github.com/evbogue/wilsite'>Git</a></p><hr>
       `
      
 
