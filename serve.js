@@ -10,6 +10,16 @@ const js = `
 let slideIndex = 0;
 showSlides();
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
