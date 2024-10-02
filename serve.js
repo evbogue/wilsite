@@ -10,8 +10,10 @@ const render = (filename, contents) => {
       <html>
         <head>
           <title>Wil's site | ${filename}</title>
-          <style>body { background: #f5deb3; color: #555; font-family: sans-serif;} a { color: #555;}</style>
+          <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+          <style>body { background: #f5deb3; color: #555; font-family: sans-serif;} a { color: #555;} main {width: 860px; margin-right: auto; margin-left: auto;} @media only screen and (max-width: 860px) { main {width: 100%;} }</style>
         </head>
+        <body hx-boost="true">
           <main>
           <hr>
           <p><a href='/'>Home</a> | <a href='/about'>About</a> | <a href='/blogs'>Blogs</a> | <a href='/products'>Products</a> | <a href='/podcasts'>Podcasts</a> | <a href='/contact'>Contact</a> | <a href='https://github.com/evbogue/wilsite'>Git</a></p><hr>
