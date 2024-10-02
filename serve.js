@@ -10,6 +10,8 @@ const render = (filename, contents) => {
       <html>
         <head>
           <title>Wil's site | ${filename}</title>
+          <meta name='viewport' content='width=device-width initial-scale=1' />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
           <script src="https://unpkg.com/htmx.org@2.0.2"></script>
           <style>body { background: #f5deb3; color: #555; font-family: sans-serif;} a { color: #555;} main {width: 860px; margin-right: auto; margin-left: auto;} @media only screen and (max-width: 860px) { main {width: 100%;} }</style>
         </head>
