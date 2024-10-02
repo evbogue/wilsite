@@ -10,11 +10,11 @@ const render = (filename, contents) => {
       <html>
         <head>
           <title>Wil's site | ${filename}</title>
-          <link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.3">      
+          <style>body { background: #f5deb3; color: #555; font-family: sans-serif;} a { color: #555;}</style>
         </head>
           <main>
           <hr>
-          <p><a href='/'>Home</a> | <a href='/about'>About</a> | <a href='/blogs'>Blogs</a> | <a href='/podcasts'>Podcasts</a> | <a href='/contact'>Contact</a> | <a href='https://github.com/evbogue/wilsite'>Git</a></p><hr>
+          <p><a href='/'>Home</a> | <a href='/about'>About</a> | <a href='/blogs'>Blogs</a> | <a href='/products'>Products</a> | <a href='/podcasts'>Podcasts</a> | <a href='/contact'>Contact</a> | <a href='https://github.com/evbogue/wilsite'>Git</a></p><hr>
       `
      
 
@@ -32,6 +32,7 @@ const render = (filename, contents) => {
 app.get('/', async (req, res) => { res.send(render('Home', await Deno.readTextFile('./home.md')))})
 app.get('/about', async (req, res) => { res.send(render('About', await Deno.readTextFile('./about.md')))})
 app.get('/blogs', async (req, res) => { res.send(render('Blogs', await Deno.readTextFile('./blogs.md')))})
+app.get('/products', async (req, res) => { res.send(render('Products', await Deno.readTextFile('./products.md')))})
 app.get('/podcasts', async (req, res) => { res.send(render('Podcasts', await Deno.readTextFile('./podcasts.md')))})
 app.get('/contact', async (req, res) => { res.send(render('Contact', await Deno.readTextFile('./contact.md')))})
 
